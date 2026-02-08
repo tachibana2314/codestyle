@@ -3,6 +3,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const EstatePage = () => {
   const properties = [
@@ -78,7 +80,8 @@ const EstatePage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="pt-20 pb-16 bg-gray-50">
+      <Navbar />
+      <div className="pt-32 pb-16 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-light tracking-wider mb-6">ESTATE</h1>
@@ -86,9 +89,12 @@ const EstatePage = () => {
               価値ある不動産との出会いを創造し、<br />
               豊かなライフスタイルをサポートします。
             </p>
-          </div>
-        </div>
-      </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
+        <Footer />
+    </div>
 
       {/* Services */}
       <section className="py-20">
@@ -107,10 +113,13 @@ const EstatePage = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+                <Footer />
+    </div>
             ))}
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Properties */}
@@ -124,11 +133,14 @@ const EstatePage = () => {
                   {/* Image placeholder */}
                   <div className="absolute inset-0 flex items-center justify-center text-gray-400">
                     <span>Property Image</span>
-                  </div>
+                    <Footer />
+    </div>
                   <div className="absolute top-4 left-4 bg-gray-900 text-white px-3 py-1 text-sm">
                     {property.type}
-                  </div>
-                </div>
+                    <Footer />
+    </div>
+                  <Footer />
+    </div>
                 <div className="p-6">
                   <h3 className="text-xl font-light mb-2">{property.title}</h3>
                   <p className="text-2xl font-light mb-4">{property.price}</p>
@@ -136,27 +148,35 @@ const EstatePage = () => {
                     <div>
                       <span className="block text-gray-500">間取り</span>
                       {property.layout}
-                    </div>
+                      <Footer />
+    </div>
                     <div>
                       <span className="block text-gray-500">面積</span>
                       {property.area}
-                    </div>
+                      <Footer />
+    </div>
                     <div>
                       <span className="block text-gray-500">所在地</span>
                       {property.location}
-                    </div>
-                  </div>
+                      <Footer />
+    </div>
+                    <Footer />
+    </div>
                   <div className="flex flex-wrap gap-2">
                     {property.features.map((feature, index) => (
                       <span key={index} className="text-xs bg-gray-100 px-2 py-1">
                         {feature}
                       </span>
                     ))}
-                  </div>
-                </div>
-              </div>
+                    <Footer />
+    </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
             ))}
-          </div>
+            <Footer />
+    </div>
           <div className="text-center mt-12">
             <Link 
               href="#" 
@@ -164,8 +184,10 @@ const EstatePage = () => {
             >
               物件一覧を見る
             </Link>
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Process */}
@@ -177,66 +199,84 @@ const EstatePage = () => {
               <div className="flex items-start">
                 <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm mr-6 flex-shrink-0 mt-1">
                   1
-                </div>
+                  <Footer />
+    </div>
                 <div>
                   <h3 className="text-lg font-medium mb-2">お問い合わせ・ご相談</h3>
                   <p className="text-gray-600 text-sm">
                     お電話またはメールフォームよりお気軽にお問い合わせください。
                     専門スタッフがご要望をお伺いします。
                   </p>
-                </div>
-              </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
               <div className="flex items-start">
                 <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm mr-6 flex-shrink-0 mt-1">
                   2
-                </div>
+                  <Footer />
+    </div>
                 <div>
                   <h3 className="text-lg font-medium mb-2">物件ご紹介・現地ご案内</h3>
                   <p className="text-gray-600 text-sm">
                     ご希望に合った物件をご紹介し、
                     実際に現地をご覧いただきます。
                   </p>
-                </div>
-              </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
               <div className="flex items-start">
                 <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm mr-6 flex-shrink-0 mt-1">
                   3
-                </div>
+                  <Footer />
+    </div>
                 <div>
                   <h3 className="text-lg font-medium mb-2">申込・審査</h3>
                   <p className="text-gray-600 text-sm">
                     お気に入りの物件が見つかりましたら、
                     お申込手続きをサポートします。
                   </p>
-                </div>
-              </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
               <div className="flex items-start">
                 <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm mr-6 flex-shrink-0 mt-1">
                   4
-                </div>
+                  <Footer />
+    </div>
                 <div>
                   <h3 className="text-lg font-medium mb-2">ご契約</h3>
                   <p className="text-gray-600 text-sm">
                     重要事項説明から契約締結まで、
                     安心してお取引いただけるようサポートします。
                   </p>
-                </div>
-              </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
               <div className="flex items-start">
                 <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm mr-6 flex-shrink-0 mt-1">
                   5
-                </div>
+                  <Footer />
+    </div>
                 <div>
                   <h3 className="text-lg font-medium mb-2">アフターフォロー</h3>
                   <p className="text-gray-600 text-sm">
                     ご契約後も、不動産に関するご相談に
                     継続的に対応いたします。
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
+              <Footer />
+    </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Why Choose Us */}
@@ -252,7 +292,8 @@ const EstatePage = () => {
                   豊富な経験と実績で
                   安心のサポート
                 </p>
-              </div>
+                <Footer />
+    </div>
               <div>
                 <div className="text-3xl font-light mb-4">1000+</div>
                 <h3 className="text-lg font-medium mb-2">取引実績</h3>
@@ -260,7 +301,8 @@ const EstatePage = () => {
                   多くのお客様に
                   選ばれ続けています
                 </p>
-              </div>
+                <Footer />
+    </div>
               <div>
                 <div className="text-3xl font-light mb-4">98%</div>
                 <h3 className="text-lg font-medium mb-2">満足度</h3>
@@ -268,10 +310,14 @@ const EstatePage = () => {
                   お客様の高い満足度を
                   維持しています
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
+                <Footer />
+    </div>
+              <Footer />
+    </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* CTA */}
@@ -295,9 +341,12 @@ const EstatePage = () => {
             >
               03-1234-5678
             </Link>
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
+      <Footer />
     </div>
   )
 }

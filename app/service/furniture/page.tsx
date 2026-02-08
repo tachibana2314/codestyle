@@ -3,6 +3,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const FurniturePage = () => {
   const categories = [
@@ -68,7 +70,8 @@ const FurniturePage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="pt-20 pb-16 bg-gray-50">
+      <Navbar />
+      <div className="pt-32 pb-16 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-light tracking-wider mb-6">FURNITURE</h1>
@@ -76,9 +79,12 @@ const FurniturePage = () => {
               暇らしに彩りを添える、<br />
               洗練されたデザイン家具をお届けします。
             </p>
-          </div>
-        </div>
-      </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
+        <Footer />
+    </div>
 
       {/* About */}
       <section className="py-20">
@@ -97,24 +103,30 @@ const FurniturePage = () => {
                   ミニマルで洗練された
                   時代を超えたデザイン
                 </p>
-              </div>
+                <Footer />
+    </div>
               <div>
                 <h3 className="text-lg font-medium mb-2">品質</h3>
                 <p className="text-gray-600 text-sm">
                   選び抜かれた素材と
                   熟練の技術による製作
                 </p>
-              </div>
+                <Footer />
+    </div>
               <div>
                 <h3 className="text-lg font-medium mb-2">機能性</h3>
                 <p className="text-gray-600 text-sm">
                   美しさと使いやすさを
                   両立させた設計
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
+                <Footer />
+    </div>
+              <Footer />
+    </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Categories */}
@@ -132,8 +144,10 @@ const FurniturePage = () => {
                 <p className="text-gray-500 text-sm">{category.count} items</p>
               </Link>
             ))}
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Products */}
@@ -147,23 +161,31 @@ const FurniturePage = () => {
                   {/* Image placeholder */}
                   <div className="absolute inset-0 flex items-center justify-center text-gray-400">
                     <span>Product Image</span>
-                  </div>
+                    <Footer />
+    </div>
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-opacity"></div>
-                </div>
+                  <Footer />
+    </div>
                 <div>
                   <div className="flex justify-between items-start mb-2">
                     <div>
                       <h3 className="text-lg font-light">{product.name}</h3>
                       <p className="text-gray-500 text-sm">{product.category}</p>
-                    </div>
+                      <Footer />
+    </div>
                     <p className="text-lg font-light">{product.price}</p>
-                  </div>
+                    <Footer />
+    </div>
                   <p className="text-gray-600 text-sm">{product.description}</p>
-                </div>
-              </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
             ))}
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Services */}
@@ -179,7 +201,8 @@ const FurniturePage = () => {
                   カスタム家具の製作を承っています
                 </p>
                 <Link href="/contact" className="text-sm underline">詳しく見る →</Link>
-              </div>
+                <Footer />
+    </div>
               <div className="bg-white p-8">
                 <h3 className="text-lg font-medium mb-4">コーディネート</h3>
                 <p className="text-gray-600 text-sm mb-4">
@@ -187,7 +210,8 @@ const FurniturePage = () => {
                   空間全体の家具選びをサポート
                 </p>
                 <Link href="/contact" className="text-sm underline">詳しく見る →</Link>
-              </div>
+                <Footer />
+    </div>
               <div className="bg-white p-8">
                 <h3 className="text-lg font-medium mb-4">レンタル</h3>
                 <p className="text-gray-600 text-sm mb-4">
@@ -195,7 +219,8 @@ const FurniturePage = () => {
                   家具レンタルサービス
                 </p>
                 <Link href="/contact" className="text-sm underline">詳しく見る →</Link>
-              </div>
+                <Footer />
+    </div>
               <div className="bg-white p-8">
                 <h3 className="text-lg font-medium mb-4">メンテナンス</h3>
                 <p className="text-gray-600 text-sm mb-4">
@@ -203,10 +228,14 @@ const FurniturePage = () => {
                   メンテナンスサービス
                 </p>
                 <Link href="/contact" className="text-sm underline">詳しく見る →</Link>
-              </div>
-            </div>
-          </div>
-        </div>
+                <Footer />
+    </div>
+              <Footer />
+    </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* CTA */}
@@ -230,9 +259,12 @@ const FurniturePage = () => {
             >
               カタログ請求
             </Link>
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
+      <Footer />
     </div>
   )
 }

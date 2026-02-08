@@ -3,6 +3,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const BuildingDesignPage = () => {
   const projects = [
@@ -64,7 +66,8 @@ const BuildingDesignPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="pt-20 pb-16 bg-gray-50">
+      <Navbar />
+      <div className="pt-32 pb-16 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-light tracking-wider mb-6">BUILDING DESIGN</h1>
@@ -72,9 +75,12 @@ const BuildingDesignPage = () => {
               都市の未来を創造する、<br />
               革新的な建築デザインを提供します。
             </p>
-          </div>
-        </div>
-      </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
+        <Footer />
+    </div>
 
       {/* Philosophy */}
       <section className="py-20">
@@ -93,24 +99,30 @@ const BuildingDesignPage = () => {
                   自然と共生する
                   サステナブルな建築
                 </p>
-              </div>
+                <Footer />
+    </div>
               <div className="text-center">
                 <div className="text-3xl font-light mb-4">機能</div>
                 <p className="text-gray-600 text-sm">
                   使う人を中心に考えた
                   最適な空間設計
                 </p>
-              </div>
+                <Footer />
+    </div>
               <div className="text-center">
                 <div className="text-3xl font-light mb-4">美</div>
                 <p className="text-gray-600 text-sm">
                   時代を超えて愛される
                   普遍的なデザイン
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
+                <Footer />
+    </div>
+              <Footer />
+    </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Services */}
@@ -123,16 +135,22 @@ const BuildingDesignPage = () => {
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center mr-6 flex-shrink-0">
                     {service.icon}
-                  </div>
+                    <Footer />
+    </div>
                   <div>
                     <h3 className="text-lg font-medium mb-2">{service.title}</h3>
                     <p className="text-gray-600 text-sm">{service.description}</p>
-                  </div>
-                </div>
-              </div>
+                    <Footer />
+    </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
             ))}
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Projects */}
@@ -147,9 +165,12 @@ const BuildingDesignPage = () => {
                     {/* Image placeholder */}
                     <div className="absolute inset-0 flex items-center justify-center text-gray-400">
                       <span>Project Image</span>
-                    </div>
-                  </div>
-                </div>
+                      <Footer />
+    </div>
+                    <Footer />
+    </div>
+                  <Footer />
+    </div>
                 <div className={index % 2 === 1 ? 'md:order-1' : ''}>
                   <div className="text-sm text-gray-500 mb-2">{project.category}</div>
                   <h3 className="text-2xl font-light tracking-wider mb-4">{project.title}</h3>
@@ -158,21 +179,28 @@ const BuildingDesignPage = () => {
                     <div className="flex">
                       <dt className="text-gray-500 w-20">規模:</dt>
                       <dd className="text-gray-700">{project.scale}</dd>
-                    </div>
+                      <Footer />
+    </div>
                     <div className="flex">
                       <dt className="text-gray-500 w-20">面積:</dt>
                       <dd className="text-gray-700">{project.area}</dd>
-                    </div>
+                      <Footer />
+    </div>
                     <div className="flex">
                       <dt className="text-gray-500 w-20">所在地:</dt>
                       <dd className="text-gray-700">{project.location}</dd>
-                    </div>
+                      <Footer />
+    </div>
                   </dl>
-                </div>
-              </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
             ))}
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Expertise */}
@@ -205,7 +233,8 @@ const BuildingDesignPage = () => {
                     医療・福祉施設
                   </li>
                 </ul>
-              </div>
+                <Footer />
+    </div>
               <div>
                 <h3 className="text-lg font-medium mb-4">特殊技術</h3>
                 <ul className="space-y-2 text-gray-600 text-sm">
@@ -230,10 +259,14 @@ const BuildingDesignPage = () => {
                     スマートビルディング
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+                <Footer />
+    </div>
+              <Footer />
+    </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* CTA */}
@@ -250,8 +283,10 @@ const BuildingDesignPage = () => {
           >
             お問い合わせはこちら
           </Link>
-        </div>
+          <Footer />
+    </div>
       </section>
+      <Footer />
     </div>
   )
 }

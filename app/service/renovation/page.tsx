@@ -3,13 +3,15 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const RenovationPage = () => {
   const projects = [
     {
       id: 1,
       title: 'モダンリビング改装',
-      image: '/images/renovation-1.jpg',
+      image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop',
       description: '既存の空間を活かしながら、現代的な要素を取り入れたリノベーション',
       area: '120㎡',
       location: '東京都'
@@ -17,7 +19,7 @@ const RenovationPage = () => {
     {
       id: 2,
       title: 'オフィススペース改装',
-      image: '/images/renovation-2.jpg',
+      image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&h=600&fit=crop',
       description: '働きやすさと創造性を重視したワークスペースのリノベーション',
       area: '200㎡',
       location: '神奈川県'
@@ -25,7 +27,7 @@ const RenovationPage = () => {
     {
       id: 3,
       title: 'カフェ併設住居',
-      image: '/images/renovation-3.jpg',
+      image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop',
       description: '1階にカフェ、2階に住居を配置した複合型リノベーション',
       area: '180㎡',
       location: '千葉県'
@@ -34,8 +36,9 @@ const RenovationPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navbar />
       {/* Hero Section */}
-      <div className="pt-20 pb-16 bg-gray-50">
+      <div className="pt-32 pb-16 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-light tracking-wider mb-6">RENOVATION</h1>
@@ -156,6 +159,7 @@ const RenovationPage = () => {
           </Link>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

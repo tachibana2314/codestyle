@@ -3,6 +3,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const OfficeDesignPage = () => {
   const features = [
@@ -54,7 +56,8 @@ const OfficeDesignPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="pt-20 pb-16 bg-gray-50">
+      <Navbar />
+      <div className="pt-32 pb-16 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-light tracking-wider mb-6">OFFICE DESIGN</h1>
@@ -62,9 +65,12 @@ const OfficeDesignPage = () => {
               働く人の創造性と生産性を最大化し、<br />
               企業文化を体現するオフィス空間をデザインします。
             </p>
-          </div>
-        </div>
-      </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
+        <Footer />
+    </div>
 
       {/* Service Features */}
       <section className="py-20">
@@ -76,11 +82,15 @@ const OfficeDesignPage = () => {
                 <div key={index} className="border-l-2 border-gray-200 pl-6">
                   <h3 className="text-lg font-medium mb-2">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
-                </div>
+                  <Footer />
+    </div>
               ))}
-            </div>
-          </div>
-        </div>
+              <Footer />
+    </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Service Process */}
@@ -92,66 +102,84 @@ const OfficeDesignPage = () => {
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center mr-6">
                   1
-                </div>
+                  <Footer />
+    </div>
                 <div>
                   <h3 className="text-lg font-medium mb-2">ヒアリング・現状分析</h3>
                   <p className="text-gray-600">
                     企業のビジョン、働き方、組織文化を理解し、
                     現状の課題と要望を整理します。
                   </p>
-                </div>
-              </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center mr-6">
                   2
-                </div>
+                  <Footer />
+    </div>
                 <div>
                   <h3 className="text-lg font-medium mb-2">コンセプト開発</h3>
                   <p className="text-gray-600">
                     分析結果をもとに、最適なオフィスコンセプトを
                     策定し、デザインの方向性を決定します。
                   </p>
-                </div>
-              </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center mr-6">
                   3
-                </div>
+                  <Footer />
+    </div>
                 <div>
                   <h3 className="text-lg font-medium mb-2">スペースプランニング</h3>
                   <p className="text-gray-600">
                     効率的な動線、ゾーニング、家具配置など、
                     詳細なレイアウトプランを作成します。
                   </p>
-                </div>
-              </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center mr-6">
                   4
-                </div>
+                  <Footer />
+    </div>
                 <div>
                   <h3 className="text-lg font-medium mb-2">デザイン開発</h3>
                   <p className="text-gray-600">
                     インテリアデザイン、照明計画、マテリアル選定など、
                     空間のデザインを具体化します。
                   </p>
-                </div>
-              </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center mr-6">
                   5
-                </div>
+                  <Footer />
+    </div>
                 <div>
                   <h3 className="text-lg font-medium mb-2">施工・納品</h3>
                   <p className="text-gray-600">
                     高品質な施工と家具の納品を行い、
                     理想のオフィス空間を実現します。
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
+              <Footer />
+    </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Projects */}
@@ -165,20 +193,27 @@ const OfficeDesignPage = () => {
                   {/* Image placeholder */}
                   <div className="absolute inset-0 flex items-center justify-center text-gray-400">
                     <span>Image</span>
-                  </div>
-                </div>
+                    <Footer />
+    </div>
+                  <Footer />
+    </div>
                 <div className="p-6">
                   <h3 className="text-lg font-medium mb-2">{project.title}</h3>
                   <p className="text-gray-600 text-sm mb-4">{project.description}</p>
                   <div className="flex gap-4 text-sm text-gray-500">
                     <span>面積: {project.area}</span>
                     <span>場所: {project.location}</span>
-                  </div>
-                </div>
-              </div>
+                    <Footer />
+    </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
             ))}
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Benefits */}
@@ -194,7 +229,8 @@ const OfficeDesignPage = () => {
                   効率的なレイアウトと快適な環境により
                   生産性が向上します
                 </p>
-              </div>
+                <Footer />
+    </div>
               <div>
                 <div className="text-3xl font-light mb-4">+40%</div>
                 <h3 className="text-lg font-medium mb-2">社員満足度</h3>
@@ -202,7 +238,8 @@ const OfficeDesignPage = () => {
                   快適な職場環境が
                   社員の満足度を高めます
                 </p>
-              </div>
+                <Footer />
+    </div>
               <div>
                 <div className="text-3xl font-light mb-4">+30%</div>
                 <h3 className="text-lg font-medium mb-2">採用力強化</h3>
@@ -210,10 +247,14 @@ const OfficeDesignPage = () => {
                   魅力的なオフィスが
                   優秀な人材を引き付けます
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
+                <Footer />
+    </div>
+              <Footer />
+    </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* CTA */}
@@ -230,8 +271,10 @@ const OfficeDesignPage = () => {
           >
             お問い合わせはこちら
           </Link>
-        </div>
+          <Footer />
+    </div>
       </section>
+      <Footer />
     </div>
   )
 }

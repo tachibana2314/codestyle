@@ -3,6 +3,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const CodeHousePage = () => {
   const features = [
@@ -54,7 +56,8 @@ const CodeHousePage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="pt-20 pb-16 bg-gray-50">
+      <Navbar />
+      <div className="pt-32 pb-16 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-light tracking-wider mb-6">tsumugite HOUSE</h1>
@@ -62,9 +65,12 @@ const CodeHousePage = () => {
               デザインと機能性を追求した、<br />
               あなただけの特別な住空間を創造します。
             </p>
-          </div>
-        </div>
-      </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
+        <Footer />
+    </div>
 
       {/* Concept */}
       <section className="py-20">
@@ -80,16 +86,22 @@ const CodeHousePage = () => {
                 <div key={index} className="flex items-start">
                   <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <span className="text-gray-600">{index + 1}</span>
-                  </div>
+                    <Footer />
+    </div>
                   <div>
                     <h3 className="text-lg font-medium mb-2">{feature.title}</h3>
                     <p className="text-gray-600 text-sm">{feature.description}</p>
-                  </div>
-                </div>
+                    <Footer />
+    </div>
+                  <Footer />
+    </div>
               ))}
-            </div>
-          </div>
-        </div>
+              <Footer />
+    </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* House Types */}
@@ -104,15 +116,19 @@ const CodeHousePage = () => {
                     {/* Image placeholder */}
                     <div className="absolute inset-0 flex items-center justify-center text-gray-400">
                       <span>House Image</span>
-                    </div>
-                  </div>
-                </div>
+                      <Footer />
+    </div>
+                    <Footer />
+    </div>
+                  <Footer />
+    </div>
                 <div className={index % 2 === 1 ? 'md:order-1' : ''}>
                   <div className="max-w-md">
                     <div className="flex items-baseline mb-4">
                       <h3 className="text-2xl font-light tracking-wider mr-3">{house.title}</h3>
                       <span className="text-gray-500 text-sm">{house.subtitle}</span>
-                    </div>
+                      <Footer />
+    </div>
                     <p className="text-gray-600 mb-6 leading-relaxed">
                       {house.description}
                     </p>
@@ -124,12 +140,17 @@ const CodeHousePage = () => {
                         </li>
                       ))}
                     </ul>
-                  </div>
-                </div>
-              </div>
+                    <Footer />
+    </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
             ))}
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Process */}
@@ -141,36 +162,45 @@ const CodeHousePage = () => {
               <div className="text-center">
                 <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center mx-auto mb-4">
                   01
-                </div>
+                  <Footer />
+    </div>
                 <h3 className="text-lg font-medium mb-2">ご相談</h3>
                 <p className="text-gray-600 text-sm">
                   お客様の理想の暮らしを
                   お聞かせください
                 </p>
-              </div>
+                <Footer />
+    </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center mx-auto mb-4">
                   02
-                </div>
+                  <Footer />
+    </div>
                 <h3 className="text-lg font-medium mb-2">プランニング</h3>
                 <p className="text-gray-600 text-sm">
                   ライフスタイルに合わせた
                   最適なプランをご提案
                 </p>
-              </div>
+                <Footer />
+    </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center mx-auto mb-4">
                   03
-                </div>
+                  <Footer />
+    </div>
                 <h3 className="text-lg font-medium mb-2">設計・施工</h3>
                 <p className="text-gray-600 text-sm">
                   細部までこだわった
                   丁寧な家づくり
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
+                <Footer />
+    </div>
+              <Footer />
+    </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* Gallery */}
@@ -183,11 +213,15 @@ const CodeHousePage = () => {
                 {/* Image placeholder */}
                 <div className="h-full flex items-center justify-center text-gray-400">
                   <span>Gallery {item}</span>
-                </div>
-              </div>
+                  <Footer />
+    </div>
+                <Footer />
+    </div>
             ))}
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
 
       {/* CTA */}
@@ -211,9 +245,12 @@ const CodeHousePage = () => {
             >
               資料請求
             </Link>
-          </div>
-        </div>
+            <Footer />
+    </div>
+          <Footer />
+    </div>
       </section>
+      <Footer />
     </div>
   )
 }
