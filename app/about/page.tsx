@@ -5,18 +5,18 @@ import Footer from '@/components/Footer'
 const historyData = [
   {
     year: '2007',
-    title: 'CODE STYLE START',
-    description: '2007年、CODE STYLE業務開始。建築のデザイン・施工に関わってきた経験と、アメリカやヨーロッパを旅し、観て感じてきたデザインなどを取り入れたショップ・住宅を具体化すべく、デザイン、施工業務をスタート。',
+    title: 'tsumugite START',
+    description: '2007年、tsumugite業務開始。建築のデザイン・施工に関わってきた経験と、アメリカやヨーロッパを旅し、観て感じてきたデザインなどを取り入れたショップ・住宅を具体化すべく、デザイン、施工業務をスタート。',
   },
   {
     year: '2009',
-    title: 'CODE STYLE.,CO.LTD',
-    description: '2009年、CODE STYLE法人化。福岡市内の様々なショップを手掛けさせていただく。',
+    title: 'tsumugite.,CO.LTD',
+    description: '2009年、tsumugite法人化。福岡市内の様々なショップを手掛けさせていただく。',
   },
   {
     year: '2010',
     title: 'RENOVATION START',
-    description: '2010年、住宅分野でCODE STYLEのこだわりを形にすべく、リノベーション事業を新たにスタート。住む人の趣味や、使う素材、デザインにこだわりを持ったリノベーションを心がける。',
+    description: '2010年、住宅分野でtsumugiteのこだわりを形にすべく、リノベーション事業を新たにスタート。住む人の趣味や、使う素材、デザインにこだわりを持ったリノベーションを心がける。',
   },
   {
     year: '2011',
@@ -25,13 +25,13 @@ const historyData = [
   },
   {
     year: '2012',
-    title: 'CODE STYLE YAKUIN',
+    title: 'tsumugite YAKUIN',
     description: '2012年、福岡市中央区薬院にオフィス移転。マンションリノベーションをイメージしたショールームをオープン。',
   },
   {
     year: '2013',
-    title: 'LABO by CODE STYLE OPEN',
-    description: '2013年、CODE STYLEのショップ＆ショールーム「LABO」オープン。セミオーダー家具や雑貨販売などを行いつつ、CODESTYLEが大事にするカルチャーをシェアするための音楽や映画、お酒をテーマにしたイベントをスタート。',
+    title: 'LABO by tsumugite OPEN',
+    description: '2013年、tsumugiteのショップ＆ショールーム「LABO」オープン。セミオーダー家具や雑貨販売などを行いつつ、CODESTYLEが大事にするカルチャーをシェアするための音楽や映画、お酒をテーマにしたイベントをスタート。',
   },
   {
     year: '2014',
@@ -45,12 +45,12 @@ const historyData = [
   },
   {
     year: '2018',
-    title: 'CODE STYLE SHOWROOM OPEN',
-    description: '2018年、LABOを改装し、空間デザインのショールームとしてリニューアルオープン。また、CODE STYLE設立10周年を迎える。',
+    title: 'tsumugite SHOWROOM OPEN',
+    description: '2018年、LABOを改装し、空間デザインのショールームとしてリニューアルオープン。また、tsumugite設立10周年を迎える。',
   },
   {
     year: '2022',
-    title: 'CODE STYLE OFFICE&LABO',
+    title: 'tsumugite OFFICE&LABO',
     description: '2022年、ショールームをオフィスへリノベーションし、オフィスを完全移設。',
   },
 ]
@@ -67,7 +67,7 @@ export default function AboutPage() {
           <p className="text-lg text-gray-600 max-w-3xl">
             時代を超える普遍性を持つトラディショナルなデザインをベースに、
             暮らす人の趣味やライフスタイルにマッチした家を、
-            流行にとらわれすぎない愛されるお店を、造り上げていくことがCODE STYLEの仕事です。
+            流行にとらわれすぎない愛されるお店を、造り上げていくことがtsumugiteの仕事です。
           </p>
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function AboutPage() {
               <dl className="space-y-4">
                 <div>
                   <dt className="text-sm text-gray-500 mb-1">会社名</dt>
-                  <dd className="text-lg">株式会社CODE STYLE</dd>
+                  <dd className="text-lg">株式会社tsumugite</dd>
                 </div>
                 <div>
                   <dt className="text-sm text-gray-500 mb-1">設立</dt>

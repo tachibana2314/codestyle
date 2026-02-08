@@ -57,7 +57,7 @@ const CodeHousePage = () => {
       <div className="pt-20 pb-16 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-light tracking-wider mb-6">CODE HOUSE</h1>
+            <h1 className="text-4xl md:text-5xl font-light tracking-wider mb-6">tsumugite HOUSE</h1>
             <p className="text-gray-600 leading-relaxed">
               デザインと機能性を追求した、<br />
               あなただけの特別な住空間を創造します。
@@ -70,9 +70,9 @@ const CodeHousePage = () => {
       <section className="py-20">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-light tracking-wider mb-8 text-center">CODE HOUSEのコンセプト</h2>
+            <h2 className="text-2xl font-light tracking-wider mb-8 text-center">tsumugite HOUSEのコンセプト</h2>
             <p className="text-gray-600 leading-relaxed text-center mb-12">
-              CODE HOUSEは、シンプルで美しいデザインと、暮らしやすさを追求した住宅ブランドです。<br />
+              tsumugite HOUSEは、シンプルで美しいデザインと、暮らしやすさを追求した住宅ブランドです。<br />
               一人ひとりのライフスタイルに寄り添い、長く愛される住まいを提供します。
             </p>
             <div className="grid md:grid-cols-2 gap-8">
@@ -95,7 +95,7 @@ const CodeHousePage = () => {
       {/* House Types */}
       <section className="py-20 bg-gray-50">
         <div className="container-custom">
-          <h2 className="text-2xl font-light tracking-wider mb-12 text-center">CODE HOUSEラインナップ</h2>
+          <h2 className="text-2xl font-light tracking-wider mb-12 text-center">tsumugite HOUSEラインナップ</h2>
           <div className="space-y-16">
             {houseTypes.map((house, index) => (
               <div key={house.id} className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
@@ -193,7 +193,7 @@ const CodeHousePage = () => {
       {/* CTA */}
       <section className="py-20">
         <div className="container-custom text-center">
-          <h2 className="text-2xl font-light tracking-wider mb-6">CODE HOUSEのご相談</h2>
+          <h2 className="text-2xl font-light tracking-wider mb-6">tsumugite HOUSEのご相談</h2>
           <p className="text-gray-600 mb-8">
             新築、リフォーム、リノベーションまで、<br />
             住まいに関するあらゆるご相談を承っております。

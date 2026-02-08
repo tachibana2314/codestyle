@@ -6,37 +6,37 @@ const works = [
     id: 1,
     category: 'SHOP',
     title: 'Cultiva糸島醸造所',
-    image: '/images/work1.jpg',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=600&fit=crop',
   },
   {
     id: 2,
     category: 'HOUSE RENOVATION',
     title: '由布高原に佇む、大人のためのリゾートハウス',
-    image: '/images/work2.jpg',
+    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=600&fit=crop',
   },
   {
     id: 3,
     category: 'HOUSE RENOVATION',
     title: '海を望む、素材にこだわる高感度リノベーション',
-    image: '/images/work3.jpg',
+    image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop',
   },
   {
     id: 4,
     category: 'HAIR SALON',
     title: "Men's Only Salon SHIFT 糸島店",
-    image: '/images/work4.jpg',
+    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop',
   },
   {
     id: 5,
     category: 'SHOP',
     title: 'BELGRAVIA&SONS（BARBER）',
-    image: '/images/work5.jpg',
+    image: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&h=600&fit=crop',
   },
   {
     id: 6,
     category: 'MANSION RENOVATION',
     title: '区切らない間取りを楽しむ、ホテルライクな住まい',
-    image: '/images/work6.jpg',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop',
   },
 ]
 
@@ -50,20 +50,20 @@ const WorksSection = () => {
           </h2>
           <p className="text-3xl md:text-4xl font-light">施工事例</p>
           <p className="text-gray-600 mt-4">
-            CODE STYLEで手掛けさせていただいた最新の施工事例を紹介します。
+            tsumugiteで手掛けさせていただいた最新の施工事例を紹介します。
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {works.map((work) => (
             <div key={work.id} className="group cursor-pointer">
-              <div className="aspect-w-16 aspect-h-12 bg-gray-200 mb-4 overflow-hidden">
-                <div className="w-full h-64 bg-gray-300 group-hover:scale-105 transition-transform duration-300">
-                  {/* Image placeholder */}
-                  <div className="flex items-center justify-center h-full text-gray-500">
-                    Image
-                  </div>
-                </div>
+              <div className="relative w-full h-64 bg-gray-200 mb-4 overflow-hidden">
+                <Image
+                  src={work.image}
+                  alt={work.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <p className="text-xs tracking-wider text-gray-500 mb-2">
                 {work.category}

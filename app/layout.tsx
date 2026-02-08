@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'CODE STYLE - Traditional Design Works',
+  title: '株式会社tsumugite - Traditional Design Works',
   description: 'RENOVATION, SHOP DESIGN, NEWBUILD HOUSE, FURNITURE.',
 }
 

@@ -299,7 +299,7 @@ export default function ContactPage() {
             {/* Referral Source */}
             <div>
               <label className="block text-sm font-medium mb-2">
-                CODE STYLEを知ったきっかけ
+                tsumugiteを知ったきっかけ
               </label>
               <select
                 name="referralSource"

@@ -1,41 +1,42 @@
 import React from 'react'
+import Image from 'next/image'
 
 const blogPosts = [
   {
     id: 1,
     title: 'MINI GYM 365 #3',
     date: '2026.01.19',
-    image: '/images/blog1.jpg',
+    image: 'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=500&fit=crop',
   },
   {
     id: 2,
     title: '引き算で形づくったシンプルでミニマルなモノトーン空間【リノベオーナーインタビュー】',
     date: '2026.01.14',
-    image: '/images/blog2.jpg',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=500&fit=crop',
   },
   {
     id: 3,
     title: 'MINI GYM 365 #2',
     date: '2026.01.13',
-    image: '/images/blog3.jpg',
+    image: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=500&fit=crop',
   },
   {
     id: 4,
     title: '明るく、たおやかな光と、センスに満ちた空間がもたらす、家族みんなの憂いの風景【リノベオーナーインタビュー】',
     date: '2026.01.07',
-    image: '/images/blog4.jpg',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=500&fit=crop',
   },
   {
     id: 5,
     title: 'MINI GYM 365 #1',
     date: '2026.01.06',
-    image: '/images/blog5.jpg',
+    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=500&fit=crop',
   },
   {
     id: 6,
     title: '眺望が素晴らしい、モスグリーンの家【リノベオーナーインタビュー】',
     date: '2025.12.11',
-    image: '/images/blog6.jpg',
+    image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&h=500&fit=crop',
   },
 ]
 
@@ -53,13 +54,13 @@ const BlogSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
             <article key={post.id} className="group cursor-pointer">
-              <div className="aspect-w-16 aspect-h-10 bg-gray-200 mb-4 overflow-hidden">
-                <div className="w-full h-56 bg-gray-300 group-hover:scale-105 transition-transform duration-300">
-                  {/* Image placeholder */}
-                  <div className="flex items-center justify-center h-full text-gray-500">
-                    Image
-                  </div>
-                </div>
+              <div className="relative w-full h-56 bg-gray-200 mb-4 overflow-hidden">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <h3 className="text-base font-medium mb-2 line-clamp-2 group-hover:text-gray-600 transition-colors">
                 {post.title}

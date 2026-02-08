@@ -38,7 +38,7 @@ const ConceptSection = () => {
           </p>
           
           <p className="text-lg font-medium pt-4">
-            CODE STYLEの仕事です。
+            tsumugiteの仕事です。
           </p>
         </div>
         

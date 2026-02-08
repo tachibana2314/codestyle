@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-light mb-4">CODE STYLE</h2>
+            <h2 className="text-2xl font-light mb-4">株式会社tsumugite</h2>
             <p className="text-sm text-gray-400 leading-relaxed">
               トラディショナルなデザインをベースに、<br />
               暮らす人のライフスタイルにマッチした空間を。
@@ -31,7 +31,7 @@ const Footer = () => {
             <h3 className="text-sm tracking-wider mb-4">FOLLOW</h3>
             <div className="space-y-2">
               <a 
-                href="https://www.instagram.com/codestyle.fukuoka/" 
+                href="https://www.instagram.com/tsumugite_official/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="block text-sm text-gray-400 hover:text-white transition-colors"
@@ -39,7 +39,7 @@ const Footer = () => {
                 Instagram
               </a>
               <a 
-                href="https://www.youtube.com/@CODESTYLE" 
+                href="https://www.youtube.com/@tsumugite" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="block text-sm text-gray-400 hover:text-white transition-colors"
@@ -52,7 +52,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-xs text-gray-400">
-            © 2026 CODE STYLE. All rights reserved.
+            © 2026 株式会社tsumugite. All rights reserved.
           </p>
         </div>
       </div>

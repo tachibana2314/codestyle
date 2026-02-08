@@ -84,9 +84,9 @@ const FurniturePage = () => {
       <section className="py-20">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-light tracking-wider mb-8 text-center">CODE STYLE FURNITURE</h2>
+            <h2 className="text-2xl font-light tracking-wider mb-8 text-center">tsumugite FURNITURE</h2>
             <p className="text-gray-600 leading-relaxed text-center mb-12">
-              CODE STYLE FURNITUREは、シンプルで時代を超えたデザインを追求します。<br />
+              tsumugite FURNITUREは、シンプルで時代を超えたデザインを追求します。<br />
               国内外の優れたデザイナーや職人と協力し、<br />
               高品質で機能的な家具を製作・セレクトしています。
             </p>

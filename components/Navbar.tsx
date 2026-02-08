@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" className="text-xl font-light tracking-wider">
-            CODE STYLE
+            tsumugite
           </Link>
 
           {/* Desktop Menu */}
