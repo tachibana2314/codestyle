@@ -5,71 +5,116 @@ import Link from 'next/link'
 
 const worksData = [
   {
-    id: 'cultiva-itoshima',
+    id: '1',
     category: 'SHOP',
-    title: 'Cultiva糸島醸造所',
+    title: '青山フラッグシップストア',
     image: '/images/work1.jpg',
-    year: '2024',
+    year: '2023',
+    client: '株式会社ABC',
+    location: '東京都港区青山',
   },
   {
-    id: 'yufuin-resort-house',
-    category: 'HOUSE RENOVATION',
-    title: '由布高原に佇む、大人のためのリゾートハウス',
+    id: '2',
+    category: 'RESTAURANT',
+    title: '代官山レストラン',
     image: '/images/work2.jpg',
-    year: '2024',
+    year: '2023',
+    client: 'レストラングループXYZ',
+    location: '東京都渋谷区代官山',
   },
   {
-    id: 'seaside-renovation',
-    category: 'HOUSE RENOVATION',
-    title: '海を望む、素材にこだわる高感度リノベーション',
+    id: '3',
+    category: 'OFFICE',
+    title: 'IT企業オフィス',
     image: '/images/work3.jpg',
-    year: '2024',
+    year: '2023',
+    client: 'テクノロジー株式会社',
+    location: '東京都港区六本木',
   },
   {
-    id: 'shift-itoshima',
-    category: 'HAIR SALON',
-    title: "Men's Only Salon SHIFT 糸島店",
+    id: '4',
+    category: 'RESIDENCE',
+    title: '目黒区個人邸',
     image: '/images/work4.jpg',
     year: '2023',
+    client: '個人',
+    location: '東京都目黒区',
   },
   {
-    id: 'belgravia-barber',
-    category: 'SHOP',
-    title: 'BELGRAVIA&SONS（BARBER）',
+    id: '5',
+    category: 'SALON',
+    title: '表参道ヘアサロン',
     image: '/images/work5.jpg',
     year: '2023',
+    client: 'ビューティーサロングループ',
+    location: '東京都渋谷区表参道',
   },
   {
-    id: 'hotel-like-mansion',
-    category: 'MANSION RENOVATION',
-    title: '区切らない間取りを楽しむ、ホテルライクな住まい',
+    id: '6',
+    category: 'CAFE',
+    title: '吉祥寺カフェ',
     image: '/images/work6.jpg',
     year: '2023',
+    client: 'カフェチェーン',
+    location: '東京都武蔵野市吉祥寺',
   },
   {
-    id: 'modern-office',
-    category: 'OFFICE DESIGN',
-    title: 'クリエイティブオフィスデザイン',
+    id: '7',
+    category: 'OFFICE',
+    title: '渋谷クリエイティブオフィス',
     image: '/images/work7.jpg',
     year: '2023',
+    client: 'クリエイティブエージェンシー',
+    location: '東京都渋谷区',
   },
   {
-    id: 'vintage-cafe',
-    category: 'CAFE',
-    title: 'ヴィンテージカフェリノベーション',
+    id: '8',
+    category: 'SHOP',
+    title: '銀座ブティック',
     image: '/images/work8.jpg',
     year: '2023',
+    client: 'ファッションブランド',
+    location: '東京都中央区銀座',
   },
   {
-    id: 'minimal-house',
-    category: 'NEW BUILD',
-    title: 'ミニマルモダンハウス',
+    id: '9',
+    category: 'BAR',
+    title: '恵比寿バー',
     image: '/images/work9.jpg',
+    year: '2023',
+    client: 'バーオーナー',
+    location: '東京都渋谷区恵比寿',
+  },
+  {
+    id: '10',
+    category: 'OFFICE',
+    title: '品川コワーキングスペース',
+    image: '/images/work10.jpg',
     year: '2022',
+    client: 'コワーキング運営会社',
+    location: '東京都港区品川',
+  },
+  {
+    id: '11',
+    category: 'RESIDENCE',
+    title: '世田谷区マンションリノベーション',
+    image: '/images/work11.jpg',
+    year: '2022',
+    client: '個人',
+    location: '東京都世田谷区',
+  },
+  {
+    id: '12',
+    category: 'RESIDENCE',
+    title: '横浜戸建てリノベーション',
+    image: '/images/work12.jpg',
+    year: '2022',
+    client: '個人',
+    location: '神奈川県横浜市',
   },
 ]
 
-const categories = ['ALL', 'HOUSE RENOVATION', 'SHOP', 'OFFICE DESIGN', 'NEW BUILD', 'CAFE', 'HAIR SALON', 'MANSION RENOVATION']
+const categories = ['ALL', 'SHOP', 'RESTAURANT', 'OFFICE', 'RESIDENCE', 'SALON', 'CAFE', 'BAR']
 
 export default function WorksPage() {
   const [selectedCategory, setSelectedCategory] = React.useState('ALL')
@@ -131,9 +176,12 @@ export default function WorksPage() {
                 <p className="text-xs tracking-wider text-gray-500 mb-2">
                   {work.category} / {work.year}
                 </p>
-                <h3 className="text-base font-medium group-hover:text-gray-600 transition-colors">
+                <h3 className="text-base font-medium group-hover:text-gray-600 transition-colors mb-2">
                   {work.title}
                 </h3>
+                <p className="text-sm text-gray-500">
+                  {work.location}
+                </p>
               </Link>
             ))}
           </div>
