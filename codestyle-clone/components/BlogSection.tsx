@@ -41,7 +41,7 @@ const blogPosts = [
 
 const BlogSection = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="blog" className="py-20 bg-gray-50">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="text-sm md:text-base tracking-widest text-gray-600 mb-4">
