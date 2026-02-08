@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -19,17 +20,17 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <a href="#" className="text-xl font-light tracking-wider">
+          <Link href="/" className="text-xl font-light tracking-wider">
             CODE STYLE
-          </a>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#works" className="text-sm tracking-wider hover:text-gray-600 transition-colors">WORKS</a>
-            <a href="#service" className="text-sm tracking-wider hover:text-gray-600 transition-colors">SERVICE</a>
-            <a href="#concept" className="text-sm tracking-wider hover:text-gray-600 transition-colors">CONCEPT</a>
-            <a href="#blog" className="text-sm tracking-wider hover:text-gray-600 transition-colors">BLOG</a>
-            <a href="#contact" className="text-sm tracking-wider hover:text-gray-600 transition-colors">CONTACT</a>
+            <Link href="/about" className="text-sm tracking-wider hover:text-gray-600 transition-colors">ABOUT</Link>
+            <Link href="/works" className="text-sm tracking-wider hover:text-gray-600 transition-colors">WORKS</Link>
+            <Link href="/#service" className="text-sm tracking-wider hover:text-gray-600 transition-colors">SERVICE</Link>
+            <Link href="/#blog" className="text-sm tracking-wider hover:text-gray-600 transition-colors">BLOG</Link>
+            <Link href="/contact" className="text-sm tracking-wider hover:text-gray-600 transition-colors">CONTACT</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -49,11 +50,11 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t">
             <div className="py-4 space-y-4">
-              <a href="#works" className="block text-sm tracking-wider hover:text-gray-600 transition-colors">WORKS</a>
-              <a href="#service" className="block text-sm tracking-wider hover:text-gray-600 transition-colors">SERVICE</a>
-              <a href="#concept" className="block text-sm tracking-wider hover:text-gray-600 transition-colors">CONCEPT</a>
-              <a href="#blog" className="block text-sm tracking-wider hover:text-gray-600 transition-colors">BLOG</a>
-              <a href="#contact" className="block text-sm tracking-wider hover:text-gray-600 transition-colors">CONTACT</a>
+              <Link href="/about" className="block text-sm tracking-wider hover:text-gray-600 transition-colors">ABOUT</Link>
+              <Link href="/works" className="block text-sm tracking-wider hover:text-gray-600 transition-colors">WORKS</Link>
+              <Link href="/#service" className="block text-sm tracking-wider hover:text-gray-600 transition-colors">SERVICE</Link>
+              <Link href="/#blog" className="block text-sm tracking-wider hover:text-gray-600 transition-colors">BLOG</Link>
+              <Link href="/contact" className="block text-sm tracking-wider hover:text-gray-600 transition-colors">CONTACT</Link>
             </div>
           </div>
         )}
